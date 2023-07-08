@@ -1,0 +1,13 @@
+/* CSS for globals styles */
+
+#root {
+    padding: 24px;
+}
+
+header{
+    min-height: 80px;
+}
+
+footer {
+    min-height:240px ;
+}
