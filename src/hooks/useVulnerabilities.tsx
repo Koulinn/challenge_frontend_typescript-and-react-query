@@ -19,7 +19,7 @@ function useVulnerabilities() {
             return data;
         },
         onError: (err: any) => {
-            // console.log(err, 'err');
+            console.log(err, 'err');
         },
     });
 }
