@@ -1,5 +1,5 @@
 const apiMessages = {
-    generalError:"Something went wrong"
-}
+    generalError: 'Something went wrong',
+};
 
-export default apiMessages
+export default apiMessages;
