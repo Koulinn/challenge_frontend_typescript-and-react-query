@@ -1,10 +1,15 @@
 import { CustomSpinner } from 'components/atoms';
-import { Home } from 'components/pages';
+import { About, Home } from 'components/pages';
 
 const routesChildren = [
     {
-        path: 'home',
+        path: '',
         element: <Home />,
+        loader: CustomSpinner,
+    },
+    {
+        path: 'about',
+        element: <About />,
         loader: CustomSpinner,
     },
 ];

@@ -1,7 +1,20 @@
-import React from "react"
+import React from 'react';
+
+import Header from './components/organisms/Header/Header';
+import Footer from './components/organisms/Footer/Footer';
+import MainWrapper from './components/atoms/Wrappers/MainWrapper';
+import { Outlet } from 'react-router-dom';
 
 function App() {
-  return <div className="App"></div>
+    return (
+        <>
+            <Header />
+            <MainWrapper>
+                <Outlet />
+            </MainWrapper>
+            <Footer />
+        </>
+    );
 }
 
-export default App
+export default App;
