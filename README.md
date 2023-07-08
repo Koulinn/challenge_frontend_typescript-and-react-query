@@ -2,7 +2,7 @@
 
 ## Goals
 
-- Typescript
-- Structure
-- React-query
-- Unit tests
+-   Typescript
+-   Structure
+-   React-query
+-   Unit tests
