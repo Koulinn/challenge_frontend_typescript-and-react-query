@@ -12,7 +12,7 @@ const getVulnerabilities = async (): Promise<VulnerabilitiesType> => {
 
 function useVulnerabilities() {
     return useQuery({
-        queryKey: ['vulnerabilitites'],
+        queryKey: ['vulnerabilities'],
         queryFn: async () => {
             const data = await getVulnerabilities();
 
