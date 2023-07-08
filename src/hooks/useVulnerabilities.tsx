@@ -1,20 +1,20 @@
 import { useQuery } from '@tanstack/react-query';
 
-import mockData from '../mockData/vulnerabilities.json';
 import VulnerabilitiesType from '../types/VulnerabilitiesTypes';
 
-const mockAPI = (): Promise<VulnerabilitiesType> =>
-    new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(mockData);
-        }, 700);
-    });
+const getVulnerabilities = async (): Promise<VulnerabilitiesType> => {
+    const results = await fetch(
+        'https://raw.githubusercontent.com/Koulinn/data-sets/main/vulnerabilities.json'
+    );
+
+    return await results.json();
+};
 
 function useVulnerabilities() {
     return useQuery({
         queryKey: ['vulnerabilitites'],
         queryFn: async () => {
-            const data = await mockAPI();
+            const data = await getVulnerabilities();
 
             return data;
         },
