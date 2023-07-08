@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 // Packages
 import { ChakraProvider } from '@chakra-ui/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { RouterProvider } from 'react-router-dom';
+import router from 'components/routes';
 
 // Create a client
 const queryClient = new QueryClient();
@@ -17,7 +19,7 @@ root.render(
     <React.StrictMode>
         <ChakraProvider>
             <QueryClientProvider client={queryClient}>
-                <App />
+                <RouterProvider router={router} />
             </QueryClientProvider>
         </ChakraProvider>
     </React.StrictMode>
