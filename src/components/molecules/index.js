@@ -1,4 +1,4 @@
-export { default as Card } from './Card/Card';
+export { default as VulnerabilityCard } from './Cards/VulnerabilityCard/VulnerabilityCard';
 
 export { default as ErrorMessages } from './ErrorMessages/ErrorMessages';
 
