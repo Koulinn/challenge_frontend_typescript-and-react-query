@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // Packages
@@ -8,6 +7,9 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { RouterProvider } from 'react-router-dom';
 import router from 'components/routes';
+
+// CSS: Global
+import '../src/style/global.css';
 
 // Create a client
 const queryClient = new QueryClient();
