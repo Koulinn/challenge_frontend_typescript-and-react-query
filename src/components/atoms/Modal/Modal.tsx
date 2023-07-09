@@ -11,7 +11,7 @@ import ModalTypes from 'types/ModalTypes';
 
 function Modal(props: ModalTypes) {
     return (
-        <ChakraModal isOpen={props.isOpen} onClose={props.onClose}>
+        <ChakraModal isOpen={props.isOpen} onClose={props.onClose} size={'xl'}>
             <ModalOverlay />
             <ModalContent>{props.children}</ModalContent>
         </ChakraModal>

@@ -24,10 +24,12 @@ function CardsViewer(props: { cards: VulnerabilitiesType }) {
                     setVulnerabilityCard={setVulnerabilityCard}
                 />
             ))}
-            <VulnerabilityModal
-                vulnerabilityCard={vulnerabilityCard}
-                setVulnerabilityCard={setVulnerabilityCard}
-            />
+            {vulnerabilityCard !== null && (
+                <VulnerabilityModal
+                    vulnerabilityCard={vulnerabilityCard}
+                    setVulnerabilityCard={setVulnerabilityCard}
+                />
+            )}
         </SimpleGrid>
     );
 }
