@@ -10,3 +10,10 @@ export interface InputTextsTypes {
     type?: string;
     isInvalid?: boolean;
 }
+
+export interface DropdownSelectType {
+    variant: string;
+    placeholder: string;
+    onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+    options: { label: string; value: string }[];
+}
