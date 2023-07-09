@@ -7,6 +7,16 @@
 -   React-query
 -   Unit tests
 
+## Run the project
+
+- Clone the repo or download files
+
+- Check if you have Node >~16
+
+- Run the command npm i or yarn install 
+
+- Run the command npm start or yarn start
+
 ## Comments
 
 -   Focused on folder structure and Typescript
