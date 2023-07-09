@@ -17,7 +17,7 @@ function useSearch(vulnerabilities: VulnerabilityDataType[] | undefined) {
         setSeverityValue(e.target.value);
     };
 
-    // Avoid unnecessary computation (if there are multiple re render events)
+    // Avoid unnecessary computation (if there are multiple re render events caused by other props, parents components)
     const filteredData = useMemo(
         () =>
             vulnerabilities?.filter((vulnerability: any) => {
