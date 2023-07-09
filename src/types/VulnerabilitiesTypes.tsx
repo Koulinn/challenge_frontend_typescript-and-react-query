@@ -9,7 +9,7 @@ export interface VulnerabilitiesExternalLinkType {
     title: string;
 }
 
-export interface VulnerabilitiesDataType {
+export interface VulnerabilityDataType {
     uuid: string;
     name: string;
     severity: string;
@@ -35,7 +35,7 @@ export default interface VulnerabilitiesType {
     from: number;
     last_page: number;
     last_page_url: string;
-    data: VulnerabilitiesDataType[];
+    data: VulnerabilityDataType[];
     next_page_url: null;
     path: string;
     links: VulnerabilitiesLinkType[];
