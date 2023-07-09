@@ -6,6 +6,7 @@ import useVulnerabilities from 'hooks/useVulnerabilities';
 
 function Home() {
     const { data, status } = useVulnerabilities();
+
     const notSuccess = status !== 'success';
 
     if (notSuccess) {
